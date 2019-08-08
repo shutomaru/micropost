@@ -16,12 +16,12 @@
                         <ul class="dropdown-menu dropdown-menu-right">
                             <li class="dropdown-item"><a href="#">My pofile</a></li>
                             <li class="dropdown-divider"></li>
-                            <li class="dropdown-item">{!! link_to_route('logout','Logout') !!}</li>
+                            <li class="dropdown-item">{!! link_to_route('logout.get','Logout') !!}</li>
                         </ul>
                     </li>
                 @else    
                     <li class="nav-item">{!! link_to_route('signup.get','Signup',[],['class'=>'nav-link']) !!}</li>
-                    <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                    <li class="nav-item">{!! link_to_route('login','Login',[],['class'=>'nav-link']) !!}</li>
                 @endif    
             </ul>
         </div>
