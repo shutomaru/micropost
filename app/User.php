@@ -28,6 +28,6 @@ class User extends Authenticatable
     ];
     
     public function microposts(){
-        return $this->hadMany(Micropost::class);
+        return $this->hasMany(Micropost::class);
     }
 }
