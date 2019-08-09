@@ -10,7 +10,7 @@
             {!! Form::open(['route'=>'login.post']) !!}
                 <div class="form-group">
                     {!! Form::label('email','Email') !!}
-                    {!! Form::email('email',old('email',['class'=>'form-control'])) !!}
+                    {!! Form::email('email',old('email'),['class'=>'form-control']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('password','Password') !!}
